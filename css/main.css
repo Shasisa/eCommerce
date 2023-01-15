@@ -141,4 +141,11 @@
   line-height: 140%;
   text-align: center;
   color: #5FD788;
+}
+
+.sec-aromatherapy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url();
 }/*# sourceMappingURL=main.css.map */
