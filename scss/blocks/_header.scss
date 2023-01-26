@@ -1,55 +1,65 @@
-.header__section {
-    @include flex-header;
+.main__header {
     height: 69px;
-
-    .header--menu {
-        @include flexbox;
-
-        & h1 a {
+    position: fixed;
+    background-color: $color-cyan-blue;
+    
+    .header__section {
+        @include flex-header;
+        
+        .header__section-1 {
             @include flexbox;
-            width: 66px;
-            height: 16px;
-            font-family: 'SF Pro Display';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 135%;
-            /* or 16px */
-            /* Additional - White */
-            color: #FFFFFF;
-            margin-left: 80px;
-            margin-right: 310px;
-        }
 
-        & h1 svg {
-            margin-right: 5px;
-        }
-
-        .nav--bar ul {
-            display: flex;
-            gap: 10px;
-
-            & a {
-                width: 61px;
-                height: 61px;
-                font-family: 'Red Hat Display';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 135%;
-                /* or 16px */
-                /* Additional - White */
-                color: $color-white;
+            .header--menu {
+                @include flexbox;
+        
+                & h1 a {
+                    @include flexbox;
+                    width: 66px;
+                    height: 16px;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 135%;
+                    /* or 16px */
+                    /* Additional - White */
+                    color: $color-white;
+                    margin-left: 80px;
+                    margin-right: 310px;
+                }
+        
+                & h1 svg {
+                    margin-right: 5px;
+                }
+        
+                .nav--bar ul {
+                    display: flex;
+                    gap: 10px;
+        
+                    & a {
+                        width: 61px;
+                        height: 61px;
+                        font-family: 'Red Hat Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 135%;
+                        /* or 16px */
+                        /* Additional - White */
+                        color: $color-white;
+                    }
+                }
             }
-        }
-    }
-
-    .header-icons {
-        //gap: 12px;
-        margin-right: 80px;
-
-        .bag {
-            margin-right: 8px;
+    
+            .header-icons {
+                //gap: 12px;
+                margin-right: 80px;
+                margin-left: 350px;
+        
+                .bag {
+                    margin-right: 8px;
+                }
+            }
         }
     }
 }

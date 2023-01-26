@@ -13,7 +13,6 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #1F2937;
 }
 
 .visually-hidden {
@@ -30,18 +29,27 @@ body {
   overflow: hidden;
 }
 
-.header__section {
+.main__header {
+  height: 69px;
+  position: fixed;
+  background-color: #1F2937;
+}
+.main__header .header__section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 69px;
 }
-.header__section .header--menu {
+.main__header .header__section .header__section-1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header__section .header--menu h1 a {
+.main__header .header__section .header__section-1 .header--menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__header .header__section .header__section-1 .header--menu h1 a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,18 +62,18 @@ body {
   line-height: 135%;
   /* or 16px */
   /* Additional - White */
-  color: #FFFFFF;
+  color: white;
   margin-left: 80px;
   margin-right: 310px;
 }
-.header__section .header--menu h1 svg {
+.main__header .header__section .header__section-1 .header--menu h1 svg {
   margin-right: 5px;
 }
-.header__section .header--menu .nav--bar ul {
+.main__header .header__section .header__section-1 .header--menu .nav--bar ul {
   display: flex;
   gap: 10px;
 }
-.header__section .header--menu .nav--bar ul a {
+.main__header .header__section .header__section-1 .header--menu .nav--bar ul a {
   width: 61px;
   height: 61px;
   font-family: "Red Hat Display";
@@ -77,9 +85,53 @@ body {
   /* Additional - White */
   color: white;
 }
-.header__section .header-icons {
+.main__header .header__section .header__section-1 .header-icons {
   margin-right: 80px;
+  margin-left: 350px;
 }
-.header__section .header-icons .bag {
+.main__header .header__section .header__section-1 .header-icons .bag {
   margin-right: 8px;
+}
+
+.main__section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1F2937;
+  margin-top: 142px;
+}
+.main__section-1 .pear-kiwi {
+  margin-left: 80px;
+}
+.main__section-1 .pear-kiwi h2 {
+  width: 423px;
+  height: 164px;
+  font-family: "M PLUS Rounded 1c";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 89.84%;
+  /* or 86px */
+  /* Additional - Green */
+  color: #5FD788;
+  margin-bottom: 38px;
+}
+.main__section-1 .pear-kiwi p {
+  width: 374px;
+  height: 62px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+  /* Greyscale - Grey 400 */
+  color: #9CA3AF;
+}
+.main__section-1 .pear-kiwi__img .sec-1__bcgi {
+  display: flex;
+  background-image: url(./imege/Ellipse\ 1\ \(1\).png);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

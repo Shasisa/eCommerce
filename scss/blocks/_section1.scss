@@ -1,0 +1,46 @@
+.main__section-1 {
+    @include flexbox;
+    background-color: $color-cyan-blue;
+    margin-top: 142px;
+
+    
+    .pear-kiwi {
+        margin-left: 80px;
+
+        h2 {
+            width: 423px;
+            height: 164px;
+            font-family: 'M PLUS Rounded 1c';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 96px;
+            line-height: 89.84%;
+            /* or 86px */
+            /* Additional - Green */
+            color: #5FD788;
+            margin-bottom: 38px;
+        }
+
+        p {
+            width: 374px;
+            height: 62px;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            /* or 20px */
+            /* Greyscale - Grey 400 */
+            color: #9CA3AF;
+        }
+    }
+    .pear-kiwi__img {
+        .sec-1__bcgi {
+            display: flex;
+            background-image: url(./imege/Ellipse\ 1\ \(1\).png);
+            width: 300px;
+            height: 300px;
+            background-size: cover;
+        }
+    }
+}
